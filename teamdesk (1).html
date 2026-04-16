@@ -371,18 +371,6 @@ nav{flex:1;padding:12px 10px;overflow-y:auto}
     <div class="modal-footer"><button class="btn" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="addMember()">Create Sub-Account</button></div>
   </div>
 
-</div>
-
-<div id="toast"></div>
-
-<script>
-// ── FIREBASE SETUP ──
-const firebaseConfig = {
- 
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
 
 // ── COLORS for avatars ──
 const COLORS=[
@@ -392,15 +380,7 @@ const COLORS=[
   {c:'#7aadff',bg:'rgba(79,142,247,0.18)'},{c:'#ffc97a',bg:'rgba(255,160,60,0.18)'}
 ];
 
-// ── MASTER ACCOUNT ──
-const MASTER = {
-  id: 1,
-  name: 'Team Leader',
-  username: 'master',
-  pass: 'master123',
-  role: 'master',
-  color: '#7aadff',
-  bg: 'rgba(79,142,247,0.18)'
+
 };
 
 // ── STATE ──
